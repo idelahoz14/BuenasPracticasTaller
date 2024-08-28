@@ -44,6 +44,9 @@ nav a:hover {
 }
 
 #contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 5rem 2rem;
 }
 
@@ -55,6 +58,16 @@ nav a:hover {
 
 .informacion {
     margin-bottom: 2rem;
+}
+
+#series .informacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.informacion img {
+    border-radius: 5rem;
+    width: 10rem;
 }
 
 .informacion strong {
@@ -77,12 +90,27 @@ ol {
     margin-top: 4.1rem;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 3rem;
+    padding: 1.5rem 3rem;
     position: absolute;
-    width: 181.5vh;
-    bottom: -13.5rem;
+    width: 93.25%;
+    bottom: -24rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a span {
+    color: blue;
 }
